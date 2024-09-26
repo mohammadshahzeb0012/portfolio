@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
-
 import './Work.css';
 
 const Work = () => {
@@ -11,64 +10,57 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   
   useEffect(()=>{
-    // { name: 'React', bgColor: 'green', icon: '/assets/react.png' },
-    // { name: 'HTML', bgColor: 'orange', icon: '/assets/html.png' },
-    // { name: 'CSS', bgColor: 'blue', icon:'assets/css.png' },
-
-    // { name: 'JavaScript', bgColor: 'yellow', icon: '/assets/javascript.png' },
-    // { name: 'Node.js', bgColor: 'lightgreen', icon: '/assets/node.png' },
-
-
     let data =    [
       {
-        title: 'Project One',
+        title: 'Jira Dashboard',
         description: 'This is a description for project one.',
-        tags: ['Web App', 'React JS'],
-        projectLink: 'https://example.com/project-one',
-        codeLink: 'https://github.com/example/project-one',
-        image: '/assets/node.png'
+        tags: ['Web App'],
+        projectLink: 'https://mohammadshahzeb0012.github.io/task-management-system/',
+        codeLink: 'https://github.com/mohammadshahzeb0012/task-management-system/settings/pages',
+        image: '/project images/tms.png'
       },
       {
-        title: 'Project Two',
+        title: 'Image Editor Using JS',
         description: 'This is a description for project two.',
-        tags: ['UI/UX', 'Mobile App'],
-        projectLink: 'https://example.com/project-two',
-        codeLink: 'https://github.com/example/project-two',
-        image: '/assets/node.png'
+        tags: ['Web App'],
+        projectLink: 'https://mohammadshahzeb0012.github.io/Image-Editor-Using-JS/',
+        codeLink: 'https://github.com/mohammadshahzeb0012/Image-Editor-Using-JS',
+        image: '/project images/image-editor.png'
       },
       {
-        title: 'Project Three',
+        title: 'Google Sheet',
         description: 'This is a description for project three.',
-        tags: ['Web App', 'React JS'],
-        projectLink: 'https://example.com/project-three',
-        codeLink: 'https://github.com/example/project-three',
-        image: '/assets/node.png'
+        tags: ['Web App'],
+        projectLink: 'https://mohammadshahzeb0012.github.io/google-sheet/',
+        codeLink: 'https://github.com/mohammadshahzeb0012/google-sheet',
+        image: '/project images/google-sheet.png'
       },
       {
-        title: 'Project Four',
+        title: 'Travello',
         description: 'This is a description for project four.',
-        tags: ['Mobile App'],
-        projectLink: 'https://example.com/project-four',
-        codeLink: 'https://github.com/example/project-four',
-        image: '/assets/node.png'
+        tags: ['UI/UX'],
+        projectLink: 'https://mohammadshahzeb0012.github.io/travello/',
+        codeLink: 'https://github.com/mohammadshahzeb0012/travello',
+        image: '/project images/travello.png'
       },
       {
-        title: 'Project Three',
+        title: 'EMS',
         description: 'This is a description for project three.',
-        tags: ['Web App', 'React JS'],
-        projectLink: 'https://example.com/project-three',
-        codeLink: 'https://github.com/example/project-three',
-        image: '/assets/node.png'
+        tags: ['Web App'],
+        projectLink: 'https://mohammadshahzeb0012.github.io/employ-management-system/',
+        codeLink: 'https://github.com/mohammadshahzeb0012/employ-management-system',
+        image: '/project images/ems.png'
       },
       {
-        title: 'Project Four',
-        description: 'This is a description for project four.',
-        tags: ['Mobile App'],
-        projectLink: 'https://example.com/project-four',
-        codeLink: 'https://github.com/example/project-four',
-        image: '/assets/node.png'
-      }
+        title: 'Persional Portfolio',
+        description: 'This is a description for project three.',
+        tags: ['React JS'],
+        projectLink: 'https://portfolio-taupe-one-34.vercel.app/',
+        codeLink: 'https://github.com/mohammadshahzeb0012/portfolio',
+        image: '/project images/portfolio.png'
+      },
     ]
+    setWorks([...data])
     setFilterWork([...data])
   },[])
 
@@ -86,6 +78,7 @@ const Work = () => {
       }
     }, 500);
   };
+
   return (
     <>
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>

@@ -11,29 +11,13 @@ const Skills = () => {
   const [skills, setSkills] = useState([
     { name: 'React', bgColor: 'green', icon: '/assets/react.png' },
     { name: 'HTML', bgColor: 'orange', icon: '/assets/html.png' },
-    { name: 'CSS', bgColor: 'blue', icon:'assets/css.png' },
-
+    { name: 'CSS', bgColor: 'blue', icon: 'assets/css.png' },
     { name: 'JavaScript', bgColor: 'yellow', icon: '/assets/javascript.png' },
     { name: 'Node.js', bgColor: 'lightgreen', icon: '/assets/node.png' },
-
-    // { name: 'Express', bgColor: 'lightcoral', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Expressjs.png' },
-    // { name: 'MongoDB', bgColor: 'lightseagreen', icon: 'https://www.vectorlogo.zone/logos/mongodb/ mongodb-icon.svg' },
-    // { name: 'Tailwind CSS', bgColor: 'purple', icon: 'https://tailwindcss.com/favicon.ico' },
-    // { name: 'Sass', bgColor: 'pink', icon: 'https://sass-lang.com/assets/img/logos/logo-1e4c9c5c.png' }
+    { name: "Express.js", bgColor: 'yellow', icon: '/assets/express.png' },
+    { name: "MongoDB", bgColor: '#0FA54D', icon: '/assets/mongodb.svg' }
   ]);
 
-  // useEffect(() => {
-  //   const query = '*[_type == "experiences"]';
-  //   const skillsQuery = '*[_type == "skills"]';
-
-  //   client.fetch(query).then((data) => {
-  //     setExperiences(data);
-  //   });
-
-  //   client.fetch(skillsQuery).then((data) => {
-  //     setSkills(data);
-  //   });
-  // }, []);
 
   return (
     <>
@@ -59,7 +43,7 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="app__skills-exp">
-           {experiences.map((experience) => (
+          {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
               key={experience.year}
@@ -93,7 +77,7 @@ const Skills = () => {
                 ))}
               </motion.div>
             </motion.div>
-          ))} 
+          ))}
         </div>
       </div>
     </>

@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-
 import { images } from '../../constants';
-// import { AppWrap, MotionWrap } from '../../wrapper';
-import { client } from '../../client';
 import './Footer.css';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-
   const { username, email, message } = formData;
 
   const handleChangeInput = (e) => {
@@ -19,27 +15,24 @@ const Footer = () => {
 
   const handleSubmit = () => {
     setLoading(true);
-
     const contact = {
       _type: 'contact',
       name: formData.username,
       email: formData.email,
       message: formData.message,
     };
-
-    client.create(contact)
-      .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
+    setLoading(!loading);
+    setIsFormSubmitted(true);
+    //   .then(() => {
+    //     setLoading(false);
+    //     setIsFormSubmitted(true);
+    //   })
+    //   .catch((err) => console.log(err));
   };
-
 
   return (
     <>
       <h2 className="head-text" id='contact'>Take a coffee & chat with me</h2>
-
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
