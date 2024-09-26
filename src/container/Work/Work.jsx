@@ -17,7 +17,7 @@ const Work = () => {
         tags: ['Web App'],
         projectLink: 'https://mohammadshahzeb0012.github.io/task-management-system/',
         codeLink: 'https://github.com/mohammadshahzeb0012/task-management-system/settings/pages',
-        image: '/project images/tms.png'
+        image: '/project-images/tms.png'
       },
       {
         title: 'Image Editor Using JS',
@@ -25,7 +25,7 @@ const Work = () => {
         tags: ['Web App'],
         projectLink: 'https://mohammadshahzeb0012.github.io/Image-Editor-Using-JS/',
         codeLink: 'https://github.com/mohammadshahzeb0012/Image-Editor-Using-JS',
-        image: '/project images/image-editor.png'
+        image: '/project-images/image-editor.png'
       },
       {
         title: 'Google Sheet',
@@ -33,7 +33,7 @@ const Work = () => {
         tags: ['Web App'],
         projectLink: 'https://mohammadshahzeb0012.github.io/google-sheet/',
         codeLink: 'https://github.com/mohammadshahzeb0012/google-sheet',
-        image: '/project images/google-sheet.png'
+        image: '/project-images/google-sheet.png'
       },
       {
         title: 'Travello',
@@ -41,7 +41,7 @@ const Work = () => {
         tags: ['UI/UX'],
         projectLink: 'https://mohammadshahzeb0012.github.io/travello/',
         codeLink: 'https://github.com/mohammadshahzeb0012/travello',
-        image: '/project images/travello.png'
+        image: '/project-images/travello.png'
       },
       {
         title: 'EMS',
@@ -49,7 +49,7 @@ const Work = () => {
         tags: ['Web App'],
         projectLink: 'https://mohammadshahzeb0012.github.io/employ-management-system/',
         codeLink: 'https://github.com/mohammadshahzeb0012/employ-management-system',
-        image: '/project images/ems.png'
+        image: '/project-images/ems.png'
       },
       {
         title: 'Persional Portfolio',
@@ -57,7 +57,7 @@ const Work = () => {
         tags: ['React JS'],
         projectLink: 'https://portfolio-taupe-one-34.vercel.app/',
         codeLink: 'https://github.com/mohammadshahzeb0012/portfolio',
-        image: '/project images/portfolio.png'
+        image: '/project-images/portfolio.png'
       },
     ]
     setWorks([...data])
